@@ -15,6 +15,10 @@ app.use(cors());
 //accept json data
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('API is running successfully!!')
+});
+
 app.use('/api/user', userRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/message', messageRoutes);
