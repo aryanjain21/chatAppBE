@@ -33,7 +33,7 @@ const server = app.listen(PORT, console.log(`Server started on PORT ${PORT}`.blu
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://young-voice.netlify.app',
     },
 });
 
